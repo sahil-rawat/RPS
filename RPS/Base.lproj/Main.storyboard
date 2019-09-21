@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,110 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dpL-p3-cEB">
+                                <rect key="frame" x="78.666666666666686" y="308" width="257" height="280.33333333333326"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w80-2U-poF">
+                                        <rect key="frame" x="90" y="0.0" width="77" height="86"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🎮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lM-Qm-I9L">
+                                                <rect key="frame" x="0.0" y="0.0" width="77" height="86"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="ML5-eJ-NAw">
+                                        <rect key="frame" x="0.0" y="94.000000000000014" width="257" height="186.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yPh-L0-hdg">
+                                                <rect key="frame" x="0.0" y="0.0" width="257" height="134.33333333333334"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qai-vz-cp1">
+                                                        <rect key="frame" x="46.666666666666671" y="0.0" width="163.66666666666663" height="20.333333333333332"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock,Paper,Scissors?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eWt-nq-1py">
+                                                                <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="20.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="7tT-dS-xSW">
+                                                        <rect key="frame" x="0.0" y="36.333333333333314" width="257" height="98"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmF-3d-lcv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="77" height="98"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                                <state key="normal" title="👊🏻"/>
+                                                                <connections>
+                                                                    <action selector="rockTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ljx-xA-CdK"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLj-TN-2BW">
+                                                                <rect key="frame" x="90" y="0.0" width="77" height="98"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                                <state key="normal" title="🖐🏻"/>
+                                                                <connections>
+                                                                    <action selector="paperTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jv9-lo-OLW"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-21-Sxk">
+                                                                <rect key="frame" x="180" y="0.0" width="77" height="98"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                                                <state key="normal" title="✌🏻"/>
+                                                                <connections>
+                                                                    <action selector="ScissorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gUY-7a-IeV"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Qai-vz-cp1" firstAttribute="centerX" secondItem="yPh-L0-hdg" secondAttribute="centerX" id="6Nc-uQ-Jns"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkH-Jl-6mb">
+                                                <rect key="frame" x="93" y="156.33333333333337" width="71" height="30"/>
+                                                <state key="normal" title="Play Again"/>
+                                                <connections>
+                                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uiD-DQ-6Nh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="w80-2U-poF" firstAttribute="centerX" secondItem="dpL-p3-cEB" secondAttribute="centerX" id="TWf-eW-ynY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dpL-p3-cEB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4t4-5n-Dbl"/>
+                            <constraint firstItem="dpL-p3-cEB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ylg-dq-jR5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="paper" destination="GLj-TN-2BW" id="ZXf-oX-hjI"/>
+                        <outlet property="playAgain" destination="mkH-Jl-6mb" id="NEu-pH-Uug"/>
+                        <outlet property="rock" destination="kmF-3d-lcv" id="zhc-1s-iJh"/>
+                        <outlet property="scissor" destination="ZBb-21-Sxk" id="Ae6-OU-edr"/>
+                        <outlet property="state" destination="8lM-Qm-I9L" id="1y8-rn-dsV"/>
+                        <outlet property="textLabel" destination="eWt-nq-1py" id="LjW-Jb-5ze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.75" y="115"/>
         </scene>
     </scenes>
 </document>
