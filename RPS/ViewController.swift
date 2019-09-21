@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scissor: UIButton!
     @IBAction func playAgain(_ sender: UIButton) {
         reset()
+        
     }
     @IBAction func ScissorTapped(_ sender: UIButton) {
         play(Sign.Scissors)
